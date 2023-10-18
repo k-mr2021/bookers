@@ -1,2 +1,29 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<h1>Books</h1>
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>body</th>
+  </tr>
+  
+  <tr>
+    <td>リーダブルコード</td>
+    <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+  </tr>
+</table>
+
+<h2>New book</h2>
+<%= form_with model: @book do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>

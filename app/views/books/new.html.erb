@@ -18,12 +18,95 @@
     <td>
       destroy
     </td>
+    
+    <td>トラブル知らずのシステム設計</td>
+    <td>システム設計の要点を図解で説明してくれます</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
+    <td>たのしいRuby</td>
+    <td>Rubyの入門におすすめです</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
+    <td>入門Git</td>
+    <td>gitについての基本操作から内部構造まで解説してくれます</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
+    <td>アルゴリズム図鑑</td>
+    <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
+    <td>達人プログラマー</td>
+    <td>プログラマ入門者は必読！</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
+    <td>データベース実践入門</td>
+    <td>効率的なSQL文を教えてくれます</td>
+    <td>
+      <a href="books/show">show</a>
+    </td>
+    <td>
+      <a href="books/edit">edit</a>
+    </td>
+    <td>
+      destroy
+    </td>
+    
   </tr>
 </table>
 
 <h2>New book</h2>
 <%= form_with model: @book do |f| %>
+<div class="text_field">
+  <p>title</p>
   <%= f.text_field :title %>
+</div>
+
+<div class="text_field">  
+  <p>body</p>
   <%= f.text_area :body %>
+</div>  
+
+<div class="text_submit">  
   <%= f.submit 'Create Book' %>
+</div>
 <% end %>

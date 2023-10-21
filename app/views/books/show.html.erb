@@ -1,9 +1,19 @@
-<p>
+<div class="flash-M">
+
+</div>
+
+
+<div class="show-title">
   Title:
   <%= @book.title %>
-</p>
+</div>
 
-<p>
-  Body
+<div class="show-body">
+  Body:
   <%= @book.body %>
-</p>
+</div>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>   | 
+
+<a href="/books">Back</a>
+ 

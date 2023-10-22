@@ -16,6 +16,88 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+
+.top_title {
+  margin: 30px;
+}
+
+.top_body p {
+  margin: 0 0 30px 50px;
+}
+
+.index_head h1 {
+  font-size: 24px;
+  margin: 30px 0 5px 30px;
+}
+
+td {
+  font-size: 14px
+}
+
+table {
+  margin: 0 0 20px 30px;
+}
+
+.index_head h2 {
+  margin: 30px 0 -10px 30px;
+}
+
+.index_title {
+  margin: 0 0 15px 30px;
+}
+
+.index_body {
+  margin: 0 0 15px 30px;
+}
+
+.index_submit {
+  margin-left: 30px;
+}
+
+.field_with_errors {
+  padding-bottom: 0;
+  display: inline-block;
+  background-color: red;
+}
+
+.flash_M {
+  margin: 30px;
+  color: green;
+}
+
+.show_title {
+  margin: 30px 0 30px 40px;
+}
+
+.show_body {
+  margin: 0 0 30px 40px;
+}
+
+.show_action {
+  margin-left: 25px;
+}
+
+.edit_head h1 {
+  margin: 30px 0 5px 30px;
+}
+
+.edit_title {
+  margin: 0 0 10px 30px;
+}
+
+.edit_body {
+  margin: 0 0 10px 30px;
+}
+
+.edit_submit {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.edit_action {
+  margin-left: 30px;
+}
+
+
